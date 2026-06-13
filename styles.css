@@ -644,28 +644,30 @@ img {
     gap: 20px;
 }
 
-.skill-name {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.95rem;
-    font-weight: 500;
+.skills-list li {
+    font-size: 0.92rem;
     color: var(--text-secondary);
-    margin-bottom: 8px;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 24px;
 }
 
-.skill-progress-bar {
-    width: 100%;
-    height: 6px;
-    background-color: var(--border-color);
-    border-radius: var(--radius-full);
-    overflow: hidden;
+.skills-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--accent-color);
+    font-size: 0.85rem;
 }
 
-.skill-progress-bar span {
+.skills-list li strong {
+    color: var(--text-primary);
     display: block;
-    height: 100%;
-    background: var(--accent-gradient);
-    border-radius: var(--radius-full);
+    font-size: 0.98rem;
+    margin-bottom: 4px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
 }
 
 /* ==========================================================================
